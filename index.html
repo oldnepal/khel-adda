@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Khel Adda Chiya Chautari · Futsal in Kohalpur</title>
+<meta name="description" content="Khel Adda Chiya Chautari — futsal court and chiya chautari in Kohalpur. Call +977 9858000188 to book your game.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%231f8a4f'/%3E%3Cpolygon points='50,33 66,45 60,64 40,64 34,45' fill='%23f6f2e9'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f6f2e9; --ink:#14231b; --muted:#5b6a60; --green:#14452f; --green-2:#0d2e20;
+    --accent:#e0a526; --card:#ffffff; --line:#e3ddcc;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+  h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:700;line-height:1.1}
+
+  header{position:sticky;top:0;z-index:10;background:rgba(246,242,233,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;justify-content:space-between;align-items:center;height:64px}
+  .logo{display:flex;align-items:center;gap:10px;font-family:Fraunces,serif;font-weight:700;font-size:1.1rem;color:var(--green)}
+  .logo svg{width:32px;height:32px}
+  .hero-logo{width:200px;height:200px;border-radius:50%;background:#fff;display:block;margin:0 auto 26px;box-shadow:0 10px 40px rgba(0,0,0,.35);object-fit:cover}
+  nav a{margin-left:22px;font-size:.92rem;color:var(--muted)}
+  nav a:hover{color:var(--green)}
+
+  .hero{background:var(--green-2);color:#f6f2e9;position:relative;overflow:hidden;padding:110px 0 120px;text-align:center}
+  .hero::before{content:"";position:absolute;inset:0;
+    background:
+      radial-gradient(circle at 50% 50%,transparent 0 78px,rgba(246,242,233,.12) 78px 80px,transparent 80px),
+      linear-gradient(rgba(246,242,233,.12),rgba(246,242,233,.12)) center/2px 100% no-repeat;
+    opacity:.8}
+  .hero .wrap{position:relative}
+  .goal{position:absolute;top:50%;width:110px;height:200px;transform:translateY(-50%);
+    border:4px solid rgba(246,242,233,.55);
+    background:
+      repeating-linear-gradient(0deg,rgba(246,242,233,.18) 0 1px,transparent 1px 14px),
+      repeating-linear-gradient(90deg,rgba(246,242,233,.18) 0 1px,transparent 1px 14px)}
+  .goal::after{content:"";position:absolute;top:-4px;bottom:-4px;width:150px;
+    border:2px solid rgba(246,242,233,.22)}
+  .goal.l{left:0;border-left:0;border-radius:0 6px 6px 0}
+  .goal.l::after{left:0;border-left:0}
+  .goal.r{right:0;border-right:0;border-radius:6px 0 0 6px}
+  .goal.r::after{right:0;border-right:0}
+  @media(max-width:700px){.goal{width:44px;height:120px}.goal::after{width:70px}}
+  .eyebrow{letter-spacing:.2em;text-transform:uppercase;font-size:.78rem;color:var(--accent);font-weight:600}
+  .hero h1{font-size:clamp(2.4rem,7vw,4.6rem);margin:16px 0 18px}
+  .hero p{max-width:520px;margin:0 auto 32px;color:#cfd8d0;font-size:1.08rem}
+  .btn{display:inline-block;padding:13px 26px;border-radius:999px;font-weight:600;font-size:.96rem;transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-primary{background:var(--accent);color:var(--green-2)}
+  .btn-ghost{border:1.5px solid rgba(246,242,233,.4);margin-left:10px}
+
+  section{padding:84px 0}
+  .head{text-align:center;margin-bottom:46px}
+  .head h2{font-size:clamp(1.8rem,4vw,2.5rem);color:var(--green)}
+  .head p{color:var(--muted);margin-top:10px}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px}
+  .card .ic{font-size:1.7rem;margin-bottom:12px}
+  .card h3{font-size:1.25rem;margin-bottom:8px;color:var(--green)}
+  .card p{color:var(--muted);font-size:.96rem}
+
+  .pricing{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;max-width:760px;margin:0 auto}
+  .plan{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:34px 28px;text-align:center;position:relative}
+  .plan.featured{background:var(--green-2);color:#f6f2e9;border-color:var(--green-2)}
+  .plan .tag{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--accent);color:var(--green-2);font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:5px 14px;border-radius:999px;white-space:nowrap}
+  .plan h3{font-size:1.2rem;color:var(--green)}
+  .plan.featured h3{color:var(--accent)}
+  .price{font-family:Fraunces,serif;font-weight:700;font-size:2.8rem;line-height:1;margin:16px 0 4px}
+  .price small{font-family:Inter,sans-serif;font-size:.9rem;font-weight:500;opacity:.7}
+  .plan .sub{font-size:.9rem;color:var(--muted);margin-bottom:18px}
+  .plan.featured .sub{color:#b9c6bc}
+  .plan ul{list-style:none;text-align:left;margin:0 auto 24px;max-width:240px;font-size:.95rem}
+  .plan li{padding:6px 0 6px 24px;position:relative}
+  .plan li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:700}
+  .plan .btn{width:100%}
+  .plan:not(.featured) .btn{border:1.5px solid var(--green);color:var(--green)}
+
+  .about{background:var(--card);border-block:1px solid var(--line)}
+  .about .wrap{max-width:720px;text-align:center}
+  .about p{color:var(--muted);font-size:1.08rem;margin-top:18px}
+
+  .contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+  .contact .card{text-align:center}
+  .big{font-family:Fraunces,serif;font-size:1.5rem;color:var(--green);font-weight:700;display:block;margin:6px 0 4px}
+  .label{font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
+
+  .social{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:40px}
+  .social a{display:flex;align-items:center;gap:9px;padding:11px 20px;border:1.5px solid var(--green);border-radius:999px;color:var(--green);font-weight:600;font-size:.92rem;transition:.15s}
+  .social a:hover{background:var(--green);color:#fff}
+  .social svg{width:18px;height:18px;fill:currentColor}
+
+  footer{background:var(--green-2);color:#b9c6bc;text-align:center;padding:34px 0;font-size:.88rem}
+  footer b{color:#f6f2e9;font-family:Fraunces,serif;font-size:1.05rem;display:block;margin-bottom:4px}
+
+  @media(max-width:560px){
+    nav a:not(:last-child){display:none}
+    .price{font-size:2.3rem}
+    .btn-ghost{margin:12px 0 0}
+    .hero{padding:80px 0 90px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">
+      <svg viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="47" fill="#1f8a4f"/>
+        <g fill="#f6f2e9"><polygon points="50,33 66,45 60,64 40,64 34,45"/></g>
+        <g stroke="#f6f2e9" stroke-width="4" stroke-linecap="round" fill="none">
+          <path d="M50 33V10M66 45l22-8M60 64l13 19M40 64L27 83M34 45L12 37"/>
+        </g>
+      </svg>
+      Khel Adda
+    </a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#why">Why Us</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="goal l" aria-hidden="true"></div>
+    <div class="goal r" aria-hidden="true"></div>
+    <div class="wrap">
+      <img class="hero-logo" src="logo.webp" alt="Khel Adda tatha Chiya Chautari logo">
+      <div class="eyebrow">Sports, Tea &amp; Community · Kohalpur</div>
+      <h1 style="font-size:clamp(2rem,5vw,3.2rem)">Khel Adda<br>Chiya Chautari</h1>
+      <p>Play hard on the court, unwind over a cup of chiya. Your spot for futsal with friends.</p>
+      <a class="btn btn-primary" href="tel:+9779858000188">Call Us Now</a>
+      <a class="btn btn-ghost" href="#contact">Find Us</a>
+    </div>
+  </div>
+
+  <section id="about" class="about">
+    <div class="wrap">
+      <div class="head" style="margin-bottom:0">
+        <h2>Game on, the Kohalpur way</h2>
+      </div>
+      <p>Khel Adda Chiya Chautari is a neighbourhood futsal spot where every match ends the same way: with friends, chiya and talk of the one that almost went in. Futsal is our main game, and there's a cricket court too.</p>
+    </div>
+  </section>
+
+  <section id="why">
+    <div class="wrap">
+      <div class="head">
+        <h2>Why play with us</h2>
+        <p>Simple, friendly and made for the game.</p>
+      </div>
+      <div class="grid">
+        <div class="card"><div class="ic">⚽</div><h3>Futsal court</h3><p>A proper court for fast, fun five-a-side matches.</p></div>
+        <div class="card"><div class="ic">🏏</div><h3>Cricket court</h3><p>Prefer bat and ball? We have a cricket court too.</p></div>
+        <div class="card"><div class="ic">☕</div><h3>Chiya Chautari</h3><p>Fresh, hot chiya to cheer the wins and soften the losses.</p></div>
+        <div class="card"><div class="ic">👥</div><h3>Friends &amp; teams</h3><p>Bring your squad or join a game. Everyone is welcome.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" style="padding-top:0">
+    <div class="wrap">
+      <div class="head">
+        <h2>Pricing</h2>
+        <p>Pay per game, or lock in your daily hour for the month.</p>
+      </div>
+      <div class="pricing">
+        <div class="plan">
+          <h3>Single Game</h3>
+          <div class="price">Rs 1,200 <small>/ game</small></div>
+          <p class="sub">Book whenever you feel like playing.</p>
+          <ul>
+            <li>Pick your own slot</li>
+            <li>No commitment</li>
+            <li>Book by phone</li>
+          </ul>
+          <a class="btn" href="tel:+9779858000188">Call Us Now</a>
+        </div>
+        <div class="plan featured">
+          <span class="tag">Best value</span>
+          <h3>Monthly Package</h3>
+          <div class="price">Rs 27,000 <small>/ month</small></div>
+          <p class="sub">One hour of court time, every day.</p>
+          <ul>
+            <li>Your slot secured daily</li>
+            <li>Rs 900 per day instead of Rs 1,200</li>
+            <li>Save Rs 9,000 over 30 games</li>
+          </ul>
+          <a class="btn btn-primary" href="tel:+9779858000188">Call Us Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="padding-top:0">
+    <div class="wrap">
+      <div class="head">
+        <h2>Book your slot</h2>
+        <p>Call us to reserve the futsal or cricket court.</p>
+      </div>
+      <div class="contact">
+        <div class="card">
+          <div class="label">Phone</div>
+          <a class="big" href="tel:+9779858000188">+977 985-8000188</a>
+          <p>Tap to call</p>
+        </div>
+        <div class="card">
+          <div class="label">Address</div>
+          <span class="big">Kohalpur</span>
+          <a href="https://maps.app.goo.gl/EPdaEBoam7QC2VyE9" target="_blank" rel="noopener" style="color:var(--green);font-weight:600">Open in Maps →</a>
+        </div>
+      </div>
+
+      <div class="social">
+        <a href="https://www.instagram.com/khel.addaa/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 4 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.2 4.4 2.6 6.8 7 7C8.3 24 8.7 24 12 24s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.2-4.4-2.6-6.8-7-7C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 100 12.4 6.2 6.2 0 000-12.4zM12 16a4 4 0 110-8 4 4 0 010 8zm6.4-11.8a1.4 1.4 0 100 2.9 1.4 1.4 0 000-2.9z"/></svg>
+          Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61591863662696" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M24 12.1C24 5.4 18.6 0 12 0S0 5.4 0 12.1c0 6 4.4 11 10.1 11.9v-8.4H7.1v-3.5h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9v2.3h3.4l-.5 3.5h-2.9V24C19.6 23.1 24 18.1 24 12.1z"/></svg>
+          Facebook</a>
+        <a href="https://www.tiktok.com/@khel.adda.chiya.ch" target="_blank" rel="noopener" aria-label="TikTok">
+          <svg viewBox="0 0 24 24"><path d="M19.6 6.3a5 5 0 01-3.1-3.1c-.1-.4-.2-.8-.2-1.2h-3.6v13.8a2.9 2.9 0 11-2-2.8V9.3a6.5 6.5 0 105.6 6.4V9a8.6 8.6 0 004.9 1.5V6.9c-.6 0-1.2-.2-1.6-.6z"/></svg>
+          TikTok</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>Khel Adda Chiya Chautari</b>
+    Kohalpur · +977 985-8000188<br>
+    © <script>document.write(new Date().getFullYear())</script> All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
